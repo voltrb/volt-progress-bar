@@ -2,28 +2,38 @@
 
 This is the world's simplest progress bar for Volt.  The progress bar updates dynamically with a Volt reactive value.
 
+# Install
+
+Include the following code in your gemfile:
+
+    gem 'volt-progress-bar'
+    
+Add the progress bar component to your dependencies.
+
+```ruby
+  component 'bootstrap'
+  component 'progress-bar'
+```
+
+The bootstrap component is not necessary, but does include styling for the progress bar out of the box.  If you wish to not use bootstrap, or you want to use your own styles, read the styling section below.
+
 # Use
 
 To get a progress bar, simply put this code in a Volt view.
 
     <:progress-bar value="{_width}" total="100" />
   
-Value must equal a reactive value and total can either be a reactive value or a number.
+Value must equal a reactive value and total can either be a reactive value or a 
 
 # Styling
 
-The following css will get included with this component.  Change these classes in your own css file if needed.
+Override the progress and progress-bar classes to customize its style.
 
 ```css
-  .volt-progress-bar-container{
-    overflow:hidden;
-    width:100%;
-    border:1px solid gray;
+  .progress{
+    width:100px;
   }
-
-  .volt-progress-bar{
-    width:0%;
-    height:20px;
-    background:gray;
+  .progress-bar{
+    background:green;
   }
 ```
