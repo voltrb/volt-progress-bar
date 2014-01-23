@@ -6,7 +6,7 @@ This is the world's simplest progress bar for Volt.  The progress bar updates dy
 
 To get a progress bar, simply put this code in a Volt view.
 
-  <:progress-bar value="{_width}" total="100" />
+    <:progress-bar value="{_width}" total="100" />
   
 Value must be a reactive value, and total can either be a number or a reactive value.
 
