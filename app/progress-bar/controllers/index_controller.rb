@@ -11,7 +11,16 @@ module ProgressBar
     end
     
     def width
-      @data.value.to_f / @data.total.to_f * 100
+      w = @data.value.to_f / @data.total.to_f * 100
+      w.with {|v| [[v, 0].max, 100].min } 
+    end
+    
+    def classes
+      if @data.locals.has_key?("classes")
+        @data.classes 
+      else
+        ""
+      end
     end
   end
 end

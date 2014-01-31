@@ -8,7 +8,7 @@ Include the following code in your gemfile:
 
     gem 'volt-progress-bar'
     
-Add the progress bar component to your dependencies.
+Add the progress bar component to your config/dependencies.rb.
 
 ```ruby
   component 'bootstrap'
@@ -23,11 +23,11 @@ To get a progress bar, simply put this code in a Volt view.
 
     <:progress-bar value="{_width}" total="100" />
   
-Value must equal a reactive value and total can either be a reactive value or a 
+Value must be set to a reactive value and total can either be a reactive value or an integer.
 
 # Styling
 
-Override the progress and progress-bar classes to customize its style.
+Override the progress and progress-bar classes to customize the progress bar's style.
 
 ```css
   .progress{
