@@ -1,6 +1,6 @@
 # Volt Progress Bar
 
-This is the world's simplest progress bar for Volt.  The progress bar updates dynamically with a Volt reactive value.
+This is a simple progress bar component for Volt.  The progress bar updates dynamically with a Volt reactive value.
 
 # Install
 
